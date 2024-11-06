@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_viewProfile"
+        android:name="com.example.bidboss2.ui.viewProfile.ViewProfileFragment"
+        android:label="@string/view_profile"
+        tools:layout="@layout/fragment_viewprofile" />
+    <fragment
+        android:id="@+id/nav_EditProfile"
+        android:name="com.example.bidboss2.ui.editProfile.EditProfileFragment"
+        android:label="@string/edit_profile"
+        tools:layout="@layout/fragment_editprofile" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.bidboss2.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_BidHistory"
+        android:name="com.example.bidboss2.ui.bidhistory.BidhistoryFragment"
+        android:label="@string/bid_history" />
+
+</navigation>

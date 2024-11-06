@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+    <!-- Seller Layout -->
+    <LinearLayout
+        android:id="@+id/seller_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/seller_image_upload"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="Upload Image"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/seller_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter product description" />
+
+        <EditText
+            android:id="@+id/seller_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter price" />
+
+        <EditText
+            android:id="@+id/seller_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter available days" />
+
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload" />
+    </LinearLayout>
+    <!-- Buyer Layout -->
+    <LinearLayout
+        android:id="@+id/buyer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/buyer_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="Product Image"
+            />
+<!--            android:src="@drawable/placeholder_image" -->
+        <TextView
+            android:id="@+id/buyer_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: Sample item description"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/buyer_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: $100"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bid_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bid" />
+    </LinearLayout>
+</LinearLayout>

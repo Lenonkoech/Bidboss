@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "461380054359",
+    "project_id": "bidboss2-5f455",
+    "storage_bucket": "bidboss2-5f455.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461380054359:android:8cc0daab4d242ce2602212",
+        "android_client_info": {
+          "package_name": "com.example.bidboss2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApcHpVfdfeIXy31hVU9SaL57pz-JBQbY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Title"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/bid_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Bid Price: $0.00"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/time_opened"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bid Opened: 01:00 PM"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/time_closes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bid Closes: 02:00 PM"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <Button
+        android:id="@+id/bid_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Bid"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

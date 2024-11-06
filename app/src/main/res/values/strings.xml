@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">BidBoss</string>
+    <string name="enter_email_password">Please enter Email and Password</string>
+    <string name="invalid_email">Invalid email format</string>
+    <string name="login_successful">Login successful!</string>
+    <string name="feature_coming_soon">Feature coming soon</string>
+    <string name="invalid_email_or_password">Invalid Email or Password</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Lenon Koech</string>
+    <string name="nav_header_subtitle">user@outlook.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="view_profile">View Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="bid_history">Bid History</string>
+    <string name="log_out">Log Out</string>
+    <string-array name="countries_array">
+        <item>Kenya</item>
+        <item>Uganda</item>
+        <item>Tanzania</item>
+        <item>South Sudan</item>
+        <item>Ethiopia</item>
+        <item>Rwanda</item>
+        <item>Burundi</item>
+        <item>Somalia</item>
+    </string-array>
+</resources>
+

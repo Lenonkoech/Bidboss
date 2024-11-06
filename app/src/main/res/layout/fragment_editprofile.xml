@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".ui.editProfile.EditProfileFragment">
+
+    <ImageView
+        android:id="@+id/edit_profilePicture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/profile_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:src="@drawable/user_image"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Add/Edit Profile Picture Above"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_profilePicture"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:textColorHint="@color/gray"
+        android:background="@drawable/edit_text_background"
+        android:hint="Edit Name"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="312dp"
+        android:textColorHint="@color/gray"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Edit Email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name"
+        android:layout_marginTop="20dp"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/countryMenu"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Select country"
+        android:theme="@style/Theme.BidBoss.login"
+        android:popupBackground="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="#050505"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_phoneNumber"
+        android:textColorHint="@color/gray"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Edit Phone Number"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/countryMenu"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_passport"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:textColorHint="@color/gray"
+        android:background="@drawable/edit_text_background"
+        android:hint="Edit ID or Passport"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phoneNumber"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_postalCode"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Edit Postal Address"
+        android:inputType="textPostalAddress"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/edit_passport"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/updateProfile"
+        android:layout_width="312dp"
+        android:layout_height="59dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/white"
+        android:text="Update Profile"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/edit_postalCode" />
+</androidx.constraintlayout.widget.ConstraintLayout>

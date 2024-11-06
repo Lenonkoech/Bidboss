@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:theme="@style/Theme.BidBoss.AppBarOverlay"
+    android:id="@+id/register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's"
+            android:textColor="@color/light_green"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Your"
+            android:textColor="@color/yellow"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textColor="@color/yellow"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Full Name Input -->
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:background="@drawable/edit_text_background"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <!-- Email Address Input -->
+        <EditText
+            android:id="@+id/etEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPassword"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <!-- Retype Password Input -->
+        <EditText
+            android:id="@+id/etRetypePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Retype Password"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPassword"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <!-- Terms & Privacy Checkbox -->
+        <CheckBox
+            android:id="@+id/termsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I agree to the Terms &amp; Privacy"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="24dp"
+            tools:ignore="HardcodedText" />
+
+<!--        Progress bar-->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+        <!-- Sign In Link -->
+        <TextView
+            android:id="@+id/btnSignInLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have an account? Sign In"
+            android:textColor="@color/gray"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:id="@+id/login">
+
+
+    <!-- Logo and Title -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="130dp"
+        android:src="@drawable/logo" />
+
+    <!-- Email/Phone Input -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logoImage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="91dp"
+        android:text="BidBoss"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appSubtitle"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="82dp"
+        android:text="AUCTION BID APP"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appSubtitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Email or Phone"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/gray"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/gray" />
+
+    <!-- Forgot Password Text -->
+
+    <!-- Login Button -->
+
+    <!-- Or Text -->
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="178dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/etPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="92dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvForgotPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="-13dp"
+        android:layout_marginEnd="176dp"
+        android:textSize="28sp"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvForgotPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Login"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="197dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="196dp"
+        android:text="OR"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <!-- Create Account Button -->
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/light_teal"
+        android:text="Create an account"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
