@@ -25,6 +25,7 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="bid_history">Bid History</string>
     <string name="log_out">Log Out</string>
+    <string name="bidboss">BidBoss</string>
     <string-array name="countries_array">
         <item>Kenya</item>
         <item>Uganda</item>
