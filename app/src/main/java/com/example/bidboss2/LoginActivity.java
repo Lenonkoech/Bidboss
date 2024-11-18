@@ -3,6 +3,7 @@ package com.example.bidboss2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -40,6 +42,8 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mFirestore = FirebaseFirestore.getInstance();
 
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+
         // Check if user is already logged in
         if (mAuth.getCurrentUser() != null) {
             // User is already logged in, navigate to MainActivity
@@ -47,6 +51,15 @@ public class LoginActivity extends AppCompatActivity {
             finish(); // Close LoginActivity
             return;
         }
+
+
+
+        //Check if user is logged in and set initial balance
+        if (mAuth.getCurrentUser() != null) {
+            FirebaseUser getCurrentUser;
+            setInitialBalance(currentUser);
+        }
+
 
         // Initialize UI components
         etEmail = findViewById(R.id.etEmail);
@@ -105,6 +118,21 @@ public class LoginActivity extends AppCompatActivity {
                                 progressBar.setVisibility(View.GONE); // Hide progress bar after completion
                             }
                         });
+            }
+        });
+    }
+
+    //Set Balance
+    private void setInitialBalance(FirebaseUser currentUser){
+        DocumentReference userRef = FirebaseFirestore.getInstance()
+                .collection("users").document(currentUser.getUid());
+
+        userRef.get().addOnSuccessListener(documentSnapshot -> {
+            //Only set initial balance if the user does not already have a balance
+            if(!documentSnapshot.contains("balance")){
+                userRef.update("balance", 500)
+                        .addOnSuccessListener(aVoid -> Log.d("Firebase", "Initial $500 balance added."))
+                        .addOnFailureListener(e -> Log.w("Firebase", "Error setting initial balance", e));
             }
         });
     }

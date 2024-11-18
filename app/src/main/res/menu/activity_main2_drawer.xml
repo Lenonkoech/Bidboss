@@ -9,6 +9,9 @@
             android:id="@+id/nav_home"
             android:title="@string/home" />
         <item
+            android:id="@+id/nav_manageAccount"
+            android:title="@string/manage_account" />
+        <item
             android:id="@+id/nav_viewProfile"
             android:title="@string/view_profile" />
         <item
@@ -20,5 +23,6 @@
         <item
             android:id="@+id/logout"
             android:title="@string/log_out" />
+
     </group>
 </menu>

@@ -25,6 +25,8 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.bidboss2.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.example.bidboss2.ui.home.HomeFragment;
@@ -60,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = binding.navView;
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_BidHistory, R.id.nav_viewProfile, R.id.nav_EditProfile)
+                R.id.nav_home, R.id.nav_BidHistory, R.id.nav_viewProfile, R.id.nav_EditProfile,R.id.nav_manageAccount)
                 .setOpenableLayout(drawer)
                 .build();
 
@@ -187,4 +189,5 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration) || super.onSupportNavigateUp();
     }
+
 }

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_winner_summary.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Item Title -->
+        <TextView
+            android:id="@+id/itemTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item: Sample Item"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:paddingBottom="8dp" />
+
+        <!-- Bid History -->
+        <TextView
+            android:id="@+id/bidHistoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bid History:\n- $100 at 15:01\n- $105 at 15:02"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:paddingBottom="16dp" />
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/winnerProductImageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sample_photo1"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Remaining Balance -->
+        <TextView
+            android:id="@+id/remainingBalanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remaining Balance: $380"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:paddingBottom="16dp" />
+
+        <!-- Postal Address -->
+        <TextView
+            android:id="@+id/postalAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Postal Address: 123 Auction St, Auction City"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:paddingBottom="16dp" />
+
+        <!-- Delivery Option Button -->
+        <Button
+            android:id="@+id/deliveryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery ($20)"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF5722"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

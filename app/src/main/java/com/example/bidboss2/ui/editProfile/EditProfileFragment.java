@@ -1,5 +1,7 @@
 package com.example.bidboss2.ui.editProfile;
 
+import static com.example.bidboss2.R.layout.*;
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -15,12 +17,15 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
+import androidx.fragment.app.Fragment;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.bidboss2.R;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
@@ -44,6 +49,7 @@ public class EditProfileFragment extends Fragment {
 
     public EditProfileFragment() {}
 
+    @NonNull
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -221,6 +227,8 @@ public class EditProfileFragment extends Fragment {
             updateProfileInFirestore(null); // No new image, just update other fields
         }
     }
+
+
 
     private void updateProfileInFirestore(String profilePhotoUrl) {
         String userId = auth.getCurrentUser().getUid();

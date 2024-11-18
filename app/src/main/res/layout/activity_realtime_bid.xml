@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_realtime_bid.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black">
+
+    <!-- User Balance -->
+    <TextView
+        android:id="@+id/balanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance: $0"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_gravity="start"
+        android:paddingBottom="8dp" />
+
+    <!-- Countdown Timer -->
+    <TextView
+        android:id="@+id/countdownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Countdown: 2:00"
+        android:textSize="20sp"
+        android:textColor="#D32F2F"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_photo1" />
+
+    <!-- Bid Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="24dp">
+
+        <!-- Increment Button -->
+        <Button
+            android:id="@+id/incrementBidButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#FF9800" />
+
+        <!-- Current Bid Amount Display -->
+        <TextView
+            android:id="@+id/bidAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bid: $0"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <!-- Place Bid Button -->
+        <Button
+            android:id="@+id/placeBidButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place Bid"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
