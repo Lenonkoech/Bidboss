@@ -20,6 +20,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="home">Home</string>
+    <string name="manage_account">Manage Account</string>
     <string name="view_profile">View Profile</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="bid_history">Bid History</string>

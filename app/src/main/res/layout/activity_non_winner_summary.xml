@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_non_winner_summary.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Greeting Message -->
+        <TextView
+            android:id="@+id/greetingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you for participating, [User Name]!"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:paddingBottom="16dp"
+            android:gravity="center" />
+
+        <!-- Item Information -->
+        <TextView
+            android:id="@+id/nonWinnerItemTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item: Sample Item"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:paddingBottom="8dp" />
+
+        <!-- Bid End Time -->
+        <TextView
+            android:id="@+id/bidEndTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bid End Time: 15:02"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:paddingBottom="16dp" />
+
+        <!-- Refunded Balance After Deduction -->
+        <TextView
+            android:id="@+id/refundBalanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refunded Balance: $97.50 (after 2.5% fee)"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:paddingBottom="16dp" />
+
+        <!-- Thank You Message -->
+        <TextView
+            android:id="@+id/thankYouTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="24dp"
+            android:text="We hope to see you in future auctions!"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

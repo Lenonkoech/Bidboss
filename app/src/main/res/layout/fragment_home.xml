@@ -1,24 +1,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/black"
+    android:orientation="horizontal"
     android:padding="16dp">
     <!-- Seller Layout -->
     <LinearLayout
         android:id="@+id/seller_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="@color/black"
+        android:orientation="vertical"
         android:visibility="gone">
 
         <ImageView
             android:id="@+id/seller_image_upload"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:contentDescription="Upload Image"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Upload Image" />
 
         <EditText
             android:id="@+id/seller_description"
@@ -49,24 +50,23 @@
         android:id="@+id/buyer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="@color/black"
-        android:visibility="gone">
+        android:orientation="vertical"
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/buyer_image"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:contentDescription="Product Image"
-            />
-<!--            android:src="@drawable/placeholder_image" -->
+            app:srcCompat="@drawable/sample_photo1" />
+        <!--            android:src="@drawable/placeholder_image" -->
         <TextView
             android:id="@+id/buyer_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Description: Sample item description"
-            android:textSize="16sp"
-            />
+            android:text="Description: IRIS SADNESS Potrait"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/buyer_price"
@@ -77,7 +77,32 @@
 
         <Button
             android:id="@+id/bid_button"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bid" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/sample_photo2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: The Eminence Sculpture"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: $200" />
+
+        <Button
+            android:id="@+id/bidButton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Bid" />
     </LinearLayout>

@@ -6,6 +6,14 @@
     app:startDestination="@id/nav_home">
 
     <fragment
+        android:id="@+id/nav_BidHistory3"
+        android:name="com.example.bidboss2.ui.bidhistory.BidhistoryFragment"
+        android:label="@string/bid_history" />
+    <fragment
+        android:id="@+id/nav_BidHistory2"
+        android:name="com.example.bidboss2.ui.bidhistory.BidhistoryFragment"
+        android:label="@string/bid_history" />
+    <fragment
         android:id="@+id/nav_viewProfile"
         android:name="com.example.bidboss2.ui.viewProfile.ViewProfileFragment"
         android:label="@string/view_profile"
@@ -25,5 +33,11 @@
         android:id="@+id/nav_BidHistory"
         android:name="com.example.bidboss2.ui.bidhistory.BidhistoryFragment"
         android:label="@string/bid_history" />
+    <fragment
+        android:id="@+id/nav_manageAccount"
+        android:name="com.example.bidboss2.ui.manageAccount.ManageAccountFragment"
+        android:label="@string/manage_account"
+        tools:layout = "@layout/fragment_manageaccount"/>
+
 
 </navigation>

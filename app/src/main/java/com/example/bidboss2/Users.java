@@ -8,11 +8,12 @@ public  class Users {
     public String postalAddress;
     public String phone;
     public String passport;
+    public double balance;
 
     public Users() {
     }
 
-    public Users(String name, String email, String profilePhotoURL, String country, String postalAddress, String phone, String passport) {
+    public Users(String name, String email, String profilePhotoURL, String country, String postalAddress, String phone, String passport, double balance) {
         this.name = name;
         this.email = email;
         this.passport = passport;
@@ -20,5 +21,6 @@ public  class Users {
         this.country = country;
         this.postalAddress = postalAddress;
         this.phone = phone;
+        this.balance = balance;
     }
 }
